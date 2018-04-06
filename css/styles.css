@@ -1,0 +1,29 @@
+body {
+  margin: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+div.search span,
+div.search input[name="keyword"] {
+  display: block;
+}
+
+div.search input[name="keyword"] {
+  margin-top: 4px;
+}
+
+div.panel {
+  margin-bottom: 15px;
+}
+
+div.panel .panel-body p:last-child {
+  margin-bottom: 0;
+}
+
+mark {
+  background-color: yellow;
+  padding: 0;
+}

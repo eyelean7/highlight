@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.es6.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>Vocab Highlighter</h1>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">Search</div>
+    <div class="panel-body">
+      <div class="search row">
+        <div class="col-xs-6">
+          <span>Type in a keyword:</span>
+          <input type="text" name="keyword" class="form-control input-sm" placeholder="vocab words">
+        </div>
+        <div class="col-xs-6">
+          <span>Search options:</span>
+          <input type="checkbox" name="opt[]" value="separateWordSearch" checked> separate word search
+          <br>
+          <input type="checkbox" name="opt[]" value="diacritics" checked> diacritics
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Article</h1>
+      <textarea name="article" id="article" class="input" rows="8" cols="72" placeholder="Copy & paste your article here"></textarea>
+    </div>
+    <div class="col-md-6">
+      <h1>Article with Highlights</h1>
+      <div class="panel panel-default">
+        <div class="panel-body context">
+          <p id="output">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <p>
+      <small>Demo by <a href="https://github.com/julmot" target="_blank">Julian Motz</a></small>
+    </p>
+  </div>
+</div>
+
+</body>
